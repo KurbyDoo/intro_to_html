@@ -23,8 +23,12 @@
     <h1 class="text__header"> This is some <span>text</span></h1> <!-- span marks seperated content -->
     <p class="text__description">
         It can be<br> 
-        <strong> &lt;strong&gt; BOLD &lt;/strong&gt; </strong> or <em> &lt;em&gt; Italic &lt;/em&gt; </em> <br>
-        <span> many different colours</span><br>
+        <span class="lg__view"><strong> &lt;strong&gt; BOLD &lt;/strong&gt; </strong> or <em> &lt;em&gt; Italic &lt;/em&gt; </em> <br> </span>
+        <span class="sm__view"><strong> &lt;strong&gt; BOLD &lt;/strong&gt; </strong> 
+        <br> or <br>
+        <em> &lt;em&gt; Italic &lt;/em&gt; </em></span>
+        <br>
+        <span id="text__colour"> many different colours</span><br>
         and be moved to the <br>
 </div>
 <div class="text__section" id="text__formatting">
@@ -50,7 +54,7 @@
         <h5 class="inline__header"> Of </h5>
         <h6 class="inline__header"> Headers</h6>
     </div>
-    <div class="inline__div">
+    <div class="inline__div lg__view">
         <h1 class="inline__header"> &lt;h1&gt; </h1>
         <h2 class="inline__header"> &lt;h2&gt; </h2>
         <h3 class="inline__header"> &lt;h3&gt; </h3>
@@ -74,7 +78,7 @@
     
     <h3>It can even be formatted as a list!</h3>
     <div>
-        <div id="left__text" style="padding-left: 25vw;">
+        <div id="left__text" style="text-align: left;">
             <ul>
                 <li>With</li>
                 <li>Each</li>
@@ -85,7 +89,7 @@
                 <li>Text</li>
             </ul>
         </div>
-        <div id="right__text" style="padding-right: 25vw;">
+        <div id="right__text" style="text-align: left;">
             <ol>
                 <li>With</li>
                 <li>Or</li>

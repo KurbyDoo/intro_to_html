@@ -18,6 +18,23 @@
     text-align: center;
 }
 
+.lg__view {
+    display: inline-block;
+}
+
+.sm__view {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .lg__view {
+        display: none;
+    }
+
+    .sm__view {
+        display: inline-block;
+    }
+}
 /* NAVBAR HEIGHT IS 60px */
 .navbar {
     background: #13191b;
@@ -130,7 +147,7 @@
 
 }
 
-.text__description span {
+#text__colour {
     background-color: #e1ce7a;
     /* backup colour  */
     /* change text colour */
@@ -156,7 +173,7 @@
 
 #text__formatting {
     background-color: #c7baae;
-    font-size: 10vh;
+    font-size: min(120px, 7vw);
     font-weight: 900;
     padding: 5vh 5vw;
 
