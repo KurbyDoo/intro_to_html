@@ -1,0 +1,195 @@
+/* 31393c, e1ce7a, ebcfb2, c5baaf, ffffff */
+* { /* for all tags/elements */
+    box-sizing: border-box; /* width and height apply to the border */
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    scroll-behavior:smooth;
+    /* font-family: 'Monaco', Courier, monospace; */
+}
+
+.inline__div {
+    display: block;
+    text-align: center;
+}
+
+.inline__header {
+    display: inline-block;
+    text-align: center;
+}
+
+/* NAVBAR HEIGHT IS 60px */
+.navbar {
+    background: #13191b;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between; /* space between the list and the main link */
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#navbar-logo {
+    background-color: #e1ce7a; /* backup colour  */
+    /* change text colour */
+    background-image: linear-gradient(to top, #e9e0b9 0%, #ffd723 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text; /* for chrome and safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text; /* for firefox */
+    -moz-text-fill-color: transparent;
+    
+    display: flex;
+    align-items: center;
+    /* cursor: pointer; redundant */
+    text-decoration: none; /* semi redundant */
+    font-size: 2rem;
+    z-index: 99;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    z-index: 99; /* above other elements */
+}
+
+.navbar__item {
+    height: 60px;
+}
+
+.navbar__links {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px; /* width between items */
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #e1ce7a;
+    transform: all 0.3s ease;
+}
+
+.text__section {
+    /* makes div height change depending on content */
+    display: flex;
+    flex-direction: column;
+
+    font-size: 5vh;
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#text {
+    /* changes background and text colour */
+    background-color: #C0FDFB;
+    color: #13191b;
+    min-height: 20vh;
+
+}
+
+.text__header {
+    font-size: 20vh;
+    color: #31393c;
+    position: relative;
+    padding: 5.5vh 5vw;
+}
+
+.text__header span { /* affects span content */
+    background-color: #e1ce7a;
+    /* backup colour  */
+    /* change text colour */
+    background-image: linear-gradient(to right, #e9e0b9 0%, #ffd723 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text; /* for chrome and safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text; /* for firefox */
+    -moz-text-fill-color: transparent;
+
+    font-weight: 800;
+    /* font-style: italic; clipping occuring */
+
+}
+
+.text__description span {
+    background-color: #e1ce7a;
+    /* backup colour  */
+    /* change text colour */
+    background-image: linear-gradient(to right, red 0%, #3223ff 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text; /* for chrome and safari */
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text; /* for firefox */
+    -moz-text-fill-color: transparent;
+}
+
+#formatting {
+    background-color: #DAFFEF;
+    padding: 5vh 10vw;
+}
+
+.text__example__paragraph {
+    color: black;
+    font-size: 2vh;
+    padding: 10px 10vw;
+}
+
+#text__formatting {
+    background-color: #c7baae;
+    font-size: 10vh;
+    font-weight: 900;
+    padding: 5vh 5vw;
+
+    background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(255, 121, 121) 100%);
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+#left__text {
+    width: 33%;
+    text-align: left;
+    float: left;
+}
+
+#right__text {
+    width: 33%;
+    text-align: right;
+    float: right;
+}
+
+#center__text {
+    width: 34%;
+    text-align: center;
+    float: right;
+}
+
+
+.second-test-div {
+    background-color: #DAFFEF;
+    color: #31393c;
+    text-align: left;
+    padding: 5%;
+    height: 100px;
+}
