@@ -34,7 +34,7 @@
         This website was designed as a way to show my understanding of html! <br>
         Along with developing my website building skills, this website will also act as a basic guide to learning HTML! <br>
     </p>
-    <h4 class="about__header"> So what is html?</h4>
+    <h4 class="about__header"> So what is HTML?</h4>
     <p class="about__description">
         HTML or Hypertext Markup Language was designed to define the structure and meaning of a web pages content. <br>
         Since being created in 1993, the language has gone through 5 different versions and is now commonly used with CSS or Cascading Style Sheets to design the presentation of web pages, and Javascript to add functionallity.
@@ -45,9 +45,9 @@
         To begin writing HTML, create a file using a text editor or an IDE (Integrated Developemnt Environment) ending in .html 
         <br>
         Then write "<span class="highlighted__text">&lt;!DOCTYPE html&gt;</span>" at the top of the file. <br> <br>
-        HTML is strucutred using Markup Tags. <br>
+        HTML is strucutred using Elements which contain Markup Tags. <br>
         They are what define and structure web pages. <br>
-        Each tag is defined using &lt;&gt; and must be closed using &lt;/&gt;. <br>
+        Each element is defined using a starting tag &lt;&gt; and must be closed using and ending tag &lt;/&gt;. <br>
         There are many different types of tags including <br>
         <ul id="types__of__tags" style="list-style: none;">
             <li>&lt;h1&gt; Header tags</li>
@@ -55,12 +55,25 @@
             <li>&lt;div&gt; Division tags</li>
             <li>&lt;br&gt; Line break tags</li>
             <li>&lt;a&gt; Anchor tags</li>
-            <li>And more</li>
         </ul>
-        
-
-
     </p>
+    <p class="about__description">
+        And more <br> <br>
+        HTML elements can also be nested within each other.
+        For example the &lt;body&gt; tag, which represents the main site is nested within the &lt;html&gt; element.
+    </p>
+    <h4 class="about__header">Example HTML Template</h4>
+    <div class="sample__code">
+        <p class="highlighted__text">
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt; <br>
+            &emsp;&lt;body&gt; <br>
+            &emsp;&emsp;&lt;h1&gt; This is the header &lt;/h1&gt; <br>
+            &emsp;&emsp;&lt;p&gt; This is the paragraph &lt;/p&gt; <br>
+            &emsp;&lt;/body&gt; <br>
+            &lt;/html&gt; <br>
+        </p>
+    </div>
 </div>
 <div class="text__section" id="text">
     <h1 class="text__header"> This is some <span>text</span></h1> <!-- span marks seperated content -->

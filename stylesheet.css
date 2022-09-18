@@ -53,6 +53,7 @@
     .sm__view {
         display: inline-block;
     }
+
 }
 /* NAVBAR HEIGHT IS 60px */
 .navbar {
@@ -61,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: min(1.2rem, 3vw);
     width: 100%;
     position: fixed !important; /* sticky not working */
     top: 0;
@@ -162,14 +163,16 @@
     flex-direction: column;
     font-size: 3vh;
     text-align: center;
+    justify-content: center;
     width: 100%;
-    padding: 100px min(200px, 10vw);
+    padding: 100px min(400px, 20vw);
 
     background-color: #13191b;
+    background-color: linear-gradient(to left, #13191b 0%, black 100%);
 }
 
 .about__header {
-    color: #daffef88;
+    color: #6589ff;
     padding-top: 5vh;
 }
 
@@ -202,6 +205,16 @@
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+}
+
+.sample__code {
+    background-color: white;
+    border: black;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
 }
 
 .text__section {
