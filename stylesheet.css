@@ -27,11 +27,8 @@
 }
 
 @media screen and (max-width: 1300px) {
-
     body, html {
         width: 100vw;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
     .lg__view {
         display: none;
