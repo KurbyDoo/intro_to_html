@@ -29,12 +29,23 @@
 @media screen and (max-width: 1300px) {
     body, html {
         overflow-x: hidden;
+        position: relative;
         width: 100%;
     }
     body {
-        position: relative;
+        overflow-y: visible;
+        width: 100%;
+
     }
 
+    div {
+        overflow-y: hidden;
+        overflow-x: visible;
+    }
+
+    ul, ol {
+        overflow-x: visible;
+    }
     .lg__view {
         display: none;
     }
@@ -51,7 +62,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky !important;
+    width: 100%;
+    position: fixed !important; /* sticky not working */
     top: 0;
     z-index: 99;
 }
@@ -64,6 +76,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    /* position: sticky; */
 }
 
 #navbar-logo {
@@ -193,7 +206,7 @@
 }
 
 #list__text {
-    font-size: min(5vh, 8vw);
+    font-size: min(5vh, 7vw);
 }
 
 #left__text {
