@@ -8,6 +8,12 @@
     /* font-family: 'Monaco', Courier, monospace; */
 }
 
+body {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
 .inline__div {
     display: block;
     text-align: center;
@@ -16,6 +22,15 @@
 .inline__header {
     display: inline-block;
     text-align: center;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .lg__view {
@@ -208,13 +223,16 @@
 }
 
 .sample__code {
+    color: black;
+    font-size: 3vh;
+    text-align: left;
+
     background-color: white;
-    border: black;
-    width: 50%;
+    border-radius: 1vh;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     padding: 10px;
-    text-align: left;
 }
 
 .text__section {
@@ -223,9 +241,22 @@
     flex-direction: column;
 
     font-size: 5vh;
+    /* padding: 0 min(400px, 20vw); */
     text-align: center;
     width: 100%;
     padding: 100px 0;
+}
+
+.text__description {
+    /* makes div height change depending on content */
+    display: flex;
+    flex-direction: column;
+
+    font-size: 5vh;
+    padding: 0 min(400px, 10vw);
+    text-align: center;
+    width: 100%;
+    /* padding: 100px ; */
 }
 
 #text {
@@ -273,7 +304,31 @@
     -moz-text-fill-color: transparent;
 }
 
-#formatting {
+.example__foramting {
+    /* makes div height change depending on content */
+
+    width: 100%;
+
+    background-color: #c7baae;
+    font-size: min(110px, 7vw);
+    font-weight: 900;
+    padding: 5vh 5vw;
+
+    background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(255, 121, 121) 100%);
+    background-size: 100%;
+    display: inline-block;
+}
+
+.formatting__section {
+    /* makes div height change depending on content */
+    display: flex;
+    flex-direction: column;
+
+    font-size: 5vh;
+    /* padding: 0 min(400px, 20vw); */
+    text-align: center;
+    width: 100%;
+
     background-color: #DAFFEF;
     padding: 5vh 10vw;
 }
@@ -282,19 +337,6 @@
     color: black;
     font-size: min(2vh, 4vw);
     padding: 10px 10vw;
-}
-
-#text__formatting {
-    background-color: #c7baae;
-    font-size: min(120px, 7vw);
-    font-weight: 900;
-    padding: 5vh 5vw;
-
-    background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(255, 121, 121) 100%);
-    background-size: 100%;
-    display: inline-block;
-    position: absolute;
-
 }
 
 #list__text {

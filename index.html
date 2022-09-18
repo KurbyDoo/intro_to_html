@@ -60,17 +60,24 @@
     <p class="about__description">
         And more <br> <br>
         HTML elements can also be nested within each other.
-        For example the &lt;body&gt; tag, which represents the main site is nested within the &lt;html&gt; element.
+        For example the <span class="highlighted__text">&lt;body&gt;</span> tag, which represents the main site is nested within the <span class="highlighted__text">&lt;html&gt;</span> element.
     </p>
     <h4 class="about__header">Example HTML Template</h4>
     <div class="sample__code">
-        <p class="highlighted__text">
+        <p>
             &lt;!DOCTYPE html&gt; <br>
             &lt;html&gt; <br>
-            &emsp;&lt;body&gt; <br>
+            &lt;head&gt; <br>
+            &emsp;&emsp;&lt;title&gt;Sample Website&lt;/title&gt; <br>
+            &lt;/head&gt; <br>
+            <br>
+            &lt;body&gt; <br>
+            <br>
             &emsp;&emsp;&lt;h1&gt; This is the header &lt;/h1&gt; <br>
+            <br>
             &emsp;&emsp;&lt;p&gt; This is the paragraph &lt;/p&gt; <br>
-            &emsp;&lt;/body&gt; <br>
+            <br>
+            &lt;/body&gt; <br>
             &lt;/html&gt; <br>
         </p>
     </div>
@@ -78,16 +85,22 @@
 <div class="text__section" id="text">
     <h1 class="text__header"> This is some <span>text</span></h1> <!-- span marks seperated content -->
     <p class="text__description">
-        It can be<br> 
-        <span class="lg__view"><strong> &lt;strong&gt; BOLD &lt;/strong&gt; </strong> or <em> &lt;em&gt; Italic &lt;/em&gt; </em> <br> </span>
-        <span class="sm__view"><strong> &lt;strong&gt; BOLD &lt;/strong&gt; </strong> 
-        <br> or <br>
-        <em> &lt;em&gt; Italic &lt;/em&gt; </em></span>
+        It can be <br> 
+        <span class="lg__view"><strong> BOLD </strong> or <em> Italic </em> <br> </span>
+        <span class="sm__view">
+            <strong>  BOLD  </strong> <br>
+            or <br>
+            <em> Italic </em> <br>
+        </span>
+        by using the &lt;strong&gt; tag for bold <br>
+        and the &lt;em&gt; for italic <br>
         <br>
-        <span id="text__colour"> many different colours</span><br>
+        <span id="text__colour"> Text can be many different colours </span>
+        by changing the <span class="highlighted__text">&lt;body&gt;</span> attributes of text <br>
         and be moved to the <br>
+    </p>
 </div>
-<div class="text__section" id="text__formatting">
+<div class="example__foramting">
     <div id="left__text">
         <p>Left</p>
     </div>
@@ -98,8 +111,7 @@
         <p>Center</p>
     </div>
 </div>
-<div class="text__section" id="formatting">
-    <br> <br> <br> <br>
+<div class="formatting__section">
     <h3> Text can be <span style="color: blue;"> formated </span> in many different ways! </h3>
     </p>
     <div class="inline__div">
@@ -157,6 +169,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="hero" id="home">
     <p>
