@@ -31,6 +31,7 @@
     body, html {
         width: 100vw;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     .lg__view {
         display: none;
