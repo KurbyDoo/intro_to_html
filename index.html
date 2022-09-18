@@ -86,19 +86,162 @@
     <h1 class="text__header"> This is some <span>text</span></h1> <!-- span marks seperated content -->
     <p class="text__description">
         It can be <br> 
-        <span class="lg__view"><strong> BOLD </strong> or <em> Italic </em> <br> </span>
+        <span class="lg__view"><strong> BOLD </strong> or <em> Italic </em> </span>
         <span class="sm__view">
             <strong>  BOLD  </strong> <br>
             or <br>
-            <em> Italic </em> <br>
+            <em> Italic </em>
         </span>
-        by using the &lt;strong&gt; tag for bold <br>
-        and the &lt;em&gt; for italic <br>
         <br>
-        <span id="text__colour"> Text can be many different colours </span>
-        by changing the <span class="highlighted__text">&lt;body&gt;</span> attributes of text <br>
-        and be moved to the <br>
+        by using the <span class="highlighted__text">&lt;strong&gt;</span> tag for bold <br>
+        and the <span class="highlighted__text">&lt;em&gt;</span> for italic <br>
+        <br>
+        <span id="text__colour"> Text can be many different colours </span> <br>
+        by changing the <span class="highlighted__text">&lt;style&gt;</span> attributes a container <br>
+        Simply set the color property to an rgb or hexadecimal value <br>
     </p>
+    <div>
+        <div class="sample__code lg__view" id="left__text" style="width: 45%;">
+            <p>
+                &lt;body&gt; <br>
+                <br>
+                <p class="indent">&lt;h1 style="color: rgb(0, 0, 255);"&gt; This is the header&lt;/h1&gt; </p>
+                <p class="indent">&lt;br&gt;</p>
+                <p class="indent">&lt;p style="color: rgb(255, 165, 0);"&gt; This is the paragraph &lt;/p&gt; </p>
+                <br>
+                &lt;/body&gt; <br>
+            </p>
+
+        </div>
+        <div class="sample__code sm__view" style="width: 100%;">
+            <p>
+                &lt;body&gt; <br>
+                <br>
+            <p class="indent">&lt;h1 style="color: rgb(0, 0, 255);"&gt; </p>
+            <p class="indent" style="padding-left: 12vh;"> This is the header</p>
+            <p class="indent">&lt;/h1&gt; </p>
+            <p class="indent">&lt;br&gt;</p>
+            <p class="indent">&lt;p style="color: rgb(255, 165, 0);"&gt; </p>
+            <p class="indent" style="padding-left: 12vh;">This is the paragraph </p>
+            <p class="indent">&lt;/p&gt; </p>
+            <br>
+            &lt;/body&gt; <br>
+            </p>
+        
+        </div>
+        <div class="sample__code lg__view" id="right__text" style="width: 45%; text-align: left;">
+            <p>
+                <h1 style="color: rgb(0, 0, 255);">This is the header </h1>
+                <br>
+                <p style="color: rgb(255, 165, 0);";>This is the paragraph</p>
+            </p>
+        </div>
+        <div class="sample__code sm__view" style="width: 100%;">
+            <p>
+            <h1 style="color: rgb(0, 0, 255);">This is the header </h1>
+            <br>
+            <p style="color: rgb(255, 165, 0);" ;>This is the paragraph</p>
+            </p>
+        </div>
+
+    </div>
+
+    <h4 class="text__description" style="margin-top: 5vh;">Text can also be moved to different locations on the page!</h4>
+    <p class="text__description">
+        by using the <span class="highlighted__text">text-align</span> property,<br>
+        text can be set to the Left, Center, and Right
+    </p>
+    <div class="lg__view">
+        <div style="margin-top: 5vh;">
+            <div id="left__text" style="text-align: center; width: 45%; color:red;">
+                <h4>HTML</h4>
+            </div>
+            <div id="right__text" style="text-align: center; width: 45%; color: blue;">
+                <h4>CSS</h4>
+            </div>
+        </div>
+        <div>
+            <div class="sample__code" id="left__text" style="width: 45%;">
+                <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt</p>
+                <p style="padding-left: 6vh;">&lt;div id="left__text"&gt</p>
+                <p style="padding-left: 12vh;">&lt;p&gtLeft&lt/p&gt</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt</p>
+                <p style="padding-left: 6vh;">&lt;div id="right__text"&gt</p>
+                <p style="padding-left: 12vh;">&lt;p&gtRight&lt/p&gt</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt</p>
+                <p style="padding-left: 6vh;">&lt;div id="center__text"&gt</p>
+                <p style="padding-left: 12vh;">&lt;p&gtCenter&lt/p&gt</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt</p>
+                <p style="padding-left: 0vh;">&lt;/div&gt</p>
+            </div>
+        </div>
+        <div>
+            <div class="sample__code" id="right__text" style="width: 45%; text-align: left;">
+                <p style="padding-left: 0vh;">#left__text {</p>
+                <p style="padding-left: 6vh;">width: 33%;</p>
+                <p style="padding-left: 6vh;">text-align: left;</p>
+                <p style="padding-left: 6vh;">float: left;</p>
+                <p style="padding-left: 6vh;">padding: 0 0;</p>
+                <p style="padding-left: 0vh;">}</p>
+                <br>
+                <p style="padding-left: 0vh;">#right__text {</p>
+                <p style="padding-left: 6vh;">width: 33%;</p>
+                <p style="padding-left: 6vh;">text-align: right;</p>
+                <p style="padding-left: 6vh;">float: right;</p>
+                <p style="padding-left: 6vh;">padding: 0 0;</p>
+                <p style="padding-left: 0vh;">}</p>
+                <br>
+                <p style="padding-left: 0vh;">#center__text {</p>
+                <p style="padding-left: 6vh;">width: 34%;</p>
+                <p style="padding-left: 6vh;">text-align: center;</p>
+                <p style="padding-left: 6vh;">float: right;</p>
+                <p style="padding-left: 0vh;">}</p>
+            </div>
+        </div>
+    </div>
+    <div class="sm__view">
+        <div style="margin-top: 5vh; color: red;">
+            <h4>HTML</h4>
+        </div>
+        <div class="sample__code">
+            <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt</p>
+            <p style="padding-left: 6vh;">&lt;div id="left__text"&gt</p>
+            <p style="padding-left: 12vh;">&lt;p&gtLeft&lt/p&gt</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt</p>
+            <p style="padding-left: 6vh;">&lt;div id="right__text"&gt</p>
+            <p style="padding-left: 12vh;">&lt;p&gtRight&lt/p&gt</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt</p>
+            <p style="padding-left: 6vh;">&lt;div id="center__text"&gt</p>
+            <p style="padding-left: 12vh;">&lt;p&gtCenter&lt/p&gt</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt</p>
+            <p style="padding-left: 0vh;">&lt;/div&gt</p>
+        </div>
+        <div style="margin-top: 5vh; color: blue;">
+            <h4>CSS</h4>
+        </div>
+        <div class="sample__code">
+            <p style="padding-left: 0vh;">#left__text {</p>
+            <p style="padding-left: 6vh;">width: 33%;</p>
+            <p style="padding-left: 6vh;">text-align: left;</p>
+            <p style="padding-left: 6vh;">float: left;</p>
+            <p style="padding-left: 6vh;">padding: 0 0;</p>
+            <p style="padding-left: 0vh;">}</p>
+            <br>
+            <p style="padding-left: 0vh;">#right__text {</p>
+            <p style="padding-left: 6vh;">width: 33%;</p>
+            <p style="padding-left: 6vh;">text-align: right;</p>
+            <p style="padding-left: 6vh;">float: right;</p>
+            <p style="padding-left: 6vh;">padding: 0 0;</p>
+            <p style="padding-left: 0vh;">}</p>
+            <br>
+            <p style="padding-left: 0vh;">#center__text {</p>
+            <p style="padding-left: 6vh;">width: 34%;</p>
+            <p style="padding-left: 6vh;">text-align: center;</p>
+            <p style="padding-left: 6vh;">float: right;</p>
+            <p style="padding-left: 0vh;">}</p>
+        </div>
+    </div>
+    <h4 style="margin-top: 5vh;"> Results: </h4>
 </div>
 <div class="example__foramting">
     <div id="left__text">
