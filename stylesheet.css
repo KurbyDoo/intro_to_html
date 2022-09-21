@@ -62,7 +62,6 @@ pre {
     }
 
     div {
-        /* overflow-y: hidden; */
         overflow-x: visible;
     }
 
@@ -254,13 +253,12 @@ pre {
 }
 
 .text__tab {
-    position: relative;
     align-items: center;
-    justify-content: center;
-    border-radius: 2vw;
+    border-radius: 1000px;
     background-color: #ff8080;
-    transform: translateY(-100px);
-    /* mix-blend-mode: lighten; */
+    transform: translateY(-140px);
+    height: 80px;
+    width: 15vw;
 }
 
 .text__section {
@@ -389,7 +387,8 @@ pre {
     background-color: #80fffb;
     display: flex;
     flex-direction: column;
-    padding: 3vh 10vw;
+    font-size: min(1vh 1vw);
+    padding: 3vh min(10vw 10px);
     align-items : center;
     justify-content: center;
 }
@@ -399,21 +398,43 @@ pre {
     width: 10vw;
 }
 
+.test__button:hover {
+    background-color: #13191b;
+    
+}
+
 .testing__paragraph {
-    animation: test__animation 2s infinite ease-in-out;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.test__paragraph__animation {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: orangered;
+    animation: pre__test__animation 1s ease-in-out;
     animation-direction: alternate-reverse;
     animation-play-state: paused;
-    text-align: center;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 @keyframes test__animation {
-    0% {transform: translateX(-100px);}
+    0% {transform: translateX(100px)};
+    100% {transform: translateX(-100px);}  
+}
+
+@keyframes pre__test__animation {
+    0% {transform: translateX(0)};
     100% {transform: translateX(100px);}  
 }
 
 .span__paragraph {
     text-align: center;
-    
+    word-wrap: break-word;
 }
 
 .second-test-div {
