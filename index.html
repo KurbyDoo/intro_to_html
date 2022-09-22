@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar-logo">Krub</a>
+            <a href="#learn" id="navbar-logo">Learn More</a>
             <ul class="navbar__menu">
                 <li class="navbar__item"> <a href="#welcome" class="navbar__links" id="welcome-page">Welcome</a></li>
                 <li class="navbar__item"> <a href="#about" class="navbar__links" id="about-page">About</a></li>
                 <li class="navbar__item"> <a href="#text" class="navbar__links" id="home-page">Text</a></li>
-                <li class="navbar__item"> <a href="#learn" class="navbar__links" id="learn-page">Learn</a></li>
+                <li class="navbar__item"> <a href="#tips" class="navbar__links" id="learn-page">Tips</a></li>
             </ul>
 
         </div>
@@ -49,21 +49,21 @@
         They are what define and structure web pages. <br>
         Each element is defined using a starting tag &lt;&gt; and must be closed using and ending tag &lt;/&gt;. <br>
         There are many different types of tags including <br>
-        <ul id="types__of__tags" style="list-style: none;">
-            <li>&lt;h1&gt; Header tags</li>
-            <li>&lt;p&gt; Paragraph tags</li>
-            <li>&lt;div&gt; Division tags</li>
-            <li>&lt;br&gt; Line break tags</li>
-            <li>&lt;a&gt; Anchor tags</li>
-        </ul>
     </p>
+    <ul id="types__of__tags" style="list-style: none;">
+        <li>&lt;h1&gt; Header tags</li>
+        <li>&lt;p&gt; Paragraph tags</li>
+        <li>&lt;div&gt; Division tags</li>
+        <li>&lt;br&gt; Line break tags</li>
+        <li>&lt;a&gt; Anchor tags</li>
+    </ul>
     <p class="about__description">
         And more <br> <br>
         HTML elements can also be nested within each other.
         For example the <span class="highlighted__text">&lt;body&gt;</span> tag, which represents the main site is nested within the <span class="highlighted__text">&lt;html&gt;</span> element.
     </p>
     <h4 class="about__header">Example HTML Template</h4>
-    <div class="sample__code">
+    <div class="sample__code" style="margin: 0 auto;">
         <p>
             &lt;!DOCTYPE html&gt; <br>
             &lt;html&gt; <br>
@@ -83,14 +83,6 @@
     </div>
 </div>
 <div class="text__section" id="text">
-    <div style="display: inline-flex; position: relative; justify-content: center; background-color: red;">
-        <div class="text__tab">
-            <p>test</p>
-        </div>
-        <div class="text__tab">
-            <p>test</p>
-        </div>
-    </div>
     <h1 class="text__header"> This is some <span>text</span></h1> <!-- span marks seperated content -->
     <p class="text__description">
         It can be <br> 
@@ -109,47 +101,47 @@
         Simply set the color property to an rgb or hexadecimal value <br>
     </p>
     <div>
-        <div class="sample__code lg__view" id="left__text" style="width: 45%;">
-            <p>
-                &lt;body&gt; <br>
+        <div class="sample__code lg__view left__text" style="width: 45%;">
+            <div>
+                <p>&lt;body&gt; <br></p>
                 <br>
                 <p class="indent">&lt;h1 style="color: rgb(0, 0, 255);"&gt; This is the header&lt;/h1&gt; </p>
                 <p class="indent">&lt;br&gt;</p>
                 <p class="indent">&lt;p style="color: rgb(255, 165, 0);"&gt; This is the paragraph &lt;/p&gt; </p>
                 <br>
-                &lt;/body&gt; <br>
-            </p>
+                <p>&lt;/body&gt; <br></p>
+            </div>
 
         </div>
+
         <div class="sample__code sm__view" style="width: 100%;">
-            <p>
-                &lt;body&gt; <br>
+            <div>
+                <p>&lt;body&gt; <br></p>
                 <br>
-            <p class="indent">&lt;h1 style="color: rgb(0, 0, 255);"&gt; </p>
-            <p class="indent" style="padding-left: 12vh;"> This is the header</p>
-            <p class="indent">&lt;/h1&gt; </p>
-            <p class="indent">&lt;br&gt;</p>
-            <p class="indent">&lt;p style="color: rgb(255, 165, 0);"&gt; </p>
-            <p class="indent" style="padding-left: 12vh;">This is the paragraph </p>
-            <p class="indent">&lt;/p&gt; </p>
-            <br>
-            &lt;/body&gt; <br>
-            </p>
-        
+                <p class="indent">&lt;h1 style="color: rgb(0, 0, 255);"&gt; </p>
+                <p class="indent" style="padding-left: 12vh;"> This is the header</p>
+                <p class="indent">&lt;/h1&gt; </p>
+                <p class="indent">&lt;br&gt;</p>
+                <p class="indent">&lt;p style="color: rgb(255, 165, 0);"&gt; </p>
+                <p class="indent" style="padding-left: 12vh;">This is the paragraph </p>
+                <p class="indent">&lt;/p&gt; </p>
+                <p>&lt;/body&gt; <br></p>
+            </div>
         </div>
-        <div class="sample__code lg__view" id="right__text" style="width: 45%; text-align: left;">
-            <p>
+
+        <div class="sample__code lg__view right__text" style="width: 45%; text-align: left;">
+            <div>
                 <h1 style="color: rgb(0, 0, 255);">This is the header </h1>
                 <br>
-                <p style="color: rgb(255, 165, 0);";>This is the paragraph</p>
-            </p>
+                <p style="color: rgb(255, 165, 0);">This is the paragraph</p>
+            </div>
         </div>
         <div class="sample__code sm__view" style="width: 100%;">
-            <p>
-            <h1 style="color: rgb(0, 0, 255);">This is the header </h1>
-            <br>
-            <p style="color: rgb(255, 165, 0);" ;>This is the paragraph</p>
-            </p>
+            <div>
+                <h1 style="color: rgb(0, 0, 255);">This is the header </h1>
+                <br>
+                <p style="color: rgb(255, 165, 0);">This is the paragraph</p>
+            </div>
         </div>
 
     </div>
@@ -161,45 +153,45 @@
     </p>
     <div class="lg__view">
         <div style="margin-top: 5vh;">
-            <div id="left__text" style="text-align: center; width: 45%; color:red;">
+            <div class="left__text" style="text-align: center; width: 45%; color:red;">
                 <h4>HTML</h4>
             </div>
-            <div id="right__text" style="text-align: center; width: 45%; color: blue;">
+            <div class="right__text" style="text-align: center; width: 45%; color: blue;">
                 <h4>CSS</h4>
             </div>
         </div>
         <div>
-            <div class="sample__code" id="left__text" style="width: 45%;">
-                <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt</p>
-                <p style="padding-left: 6vh;">&lt;div id="left__text"&gt</p>
-                <p style="padding-left: 12vh;">&lt;p&gtLeft&lt/p&gt</p>
-                <p style="padding-left: 6vh;">&lt;/div&gt</p>
-                <p style="padding-left: 6vh;">&lt;div id="right__text"&gt</p>
-                <p style="padding-left: 12vh;">&lt;p&gtRight&lt/p&gt</p>
-                <p style="padding-left: 6vh;">&lt;/div&gt</p>
-                <p style="padding-left: 6vh;">&lt;div id="center__text"&gt</p>
-                <p style="padding-left: 12vh;">&lt;p&gtCenter&lt/p&gt</p>
-                <p style="padding-left: 6vh;">&lt;/div&gt</p>
-                <p style="padding-left: 0vh;">&lt;/div&gt</p>
+            <div class="sample__code left__text" style="width: 45%;">
+                <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt;</p>
+                <p style="padding-left: 6vh;">&lt;div class="left__text"&gt;</p>
+                <p style="padding-left: 12vh;">&lt;p&gt;Left&lt;/p&gt;</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+                <p style="padding-left: 6vh;">&lt;div class="right__text"&gt;</p>
+                <p style="padding-left: 12vh;">&lt;p&gt;Right&lt;/p&gt;</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+                <p style="padding-left: 6vh;">&lt;div class="center__text"&gt;</p>
+                <p style="padding-left: 12vh;">&lt;p&gt;Center&lt;/p&gt;</p>
+                <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+                <p style="padding-left: 0vh;">&lt;/div&gt;</p>
             </div>
         </div>
         <div>
-            <div class="sample__code" id="right__text" style="width: 45%; text-align: left;">
-                <p style="padding-left: 0vh;">#left__text {</p>
+            <div class="sample__code right__text" style="width: 45%; text-align: left;">
+                <p style="padding-left: 0vh;">.left__text {</p>
                 <p style="padding-left: 6vh;">width: 33%;</p>
                 <p style="padding-left: 6vh;">text-align: left;</p>
                 <p style="padding-left: 6vh;">float: left;</p>
                 <p style="padding-left: 6vh;">padding: 0 0;</p>
                 <p style="padding-left: 0vh;">}</p>
                 <br>
-                <p style="padding-left: 0vh;">#right__text {</p>
+                <p style="padding-left: 0vh;">.right__text {</p>
                 <p style="padding-left: 6vh;">width: 33%;</p>
                 <p style="padding-left: 6vh;">text-align: right;</p>
                 <p style="padding-left: 6vh;">float: right;</p>
                 <p style="padding-left: 6vh;">padding: 0 0;</p>
                 <p style="padding-left: 0vh;">}</p>
                 <br>
-                <p style="padding-left: 0vh;">#center__text {</p>
+                <p style="padding-left: 0vh;">.center__text {</p>
                 <p style="padding-left: 6vh;">width: 34%;</p>
                 <p style="padding-left: 6vh;">text-align: center;</p>
                 <p style="padding-left: 6vh;">float: right;</p>
@@ -207,42 +199,42 @@
             </div>
         </div>
     </div>
-    <div class="sm__view">
+    <div class="sm__view vertical__flexbox" style="display: flex;">
         <div style="margin-top: 5vh; color: red;">
             <h4>HTML</h4>
         </div>
         <div class="sample__code">
-            <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt</p>
-            <p style="padding-left: 6vh;">&lt;div id="left__text"&gt</p>
-            <p style="padding-left: 12vh;">&lt;p&gtLeft&lt/p&gt</p>
-            <p style="padding-left: 6vh;">&lt;/div&gt</p>
-            <p style="padding-left: 6vh;">&lt;div id="right__text"&gt</p>
-            <p style="padding-left: 12vh;">&lt;p&gtRight&lt/p&gt</p>
-            <p style="padding-left: 6vh;">&lt;/div&gt</p>
-            <p style="padding-left: 6vh;">&lt;div id="center__text"&gt</p>
-            <p style="padding-left: 12vh;">&lt;p&gtCenter&lt/p&gt</p>
-            <p style="padding-left: 6vh;">&lt;/div&gt</p>
-            <p style="padding-left: 0vh;">&lt;/div&gt</p>
+            <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt;</p>
+            <p style="padding-left: 6vh;">&lt;div class="left__text"&gt;</p>
+            <p style="padding-left: 12vh;">&lt;p&gt;Left&lt;/p&gt;</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+            <p style="padding-left: 6vh;">&lt;div class="right__text"&gt;</p>
+            <p style="padding-left: 12vh;">&lt;p&gt;Right&lt;/p&gt;</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+            <p style="padding-left: 6vh;">&lt;div class="center__text"&gt;</p>
+            <p style="padding-left: 12vh;">&lt;p&gt;Center&lt;/p&gt;</p>
+            <p style="padding-left: 6vh;">&lt;/div&gt;</p>
+            <p style="padding-left: 0vh;">&lt;/div&gt;</p>
         </div>
         <div style="margin-top: 5vh; color: blue;">
             <h4>CSS</h4>
         </div>
         <div class="sample__code">
-            <p style="padding-left: 0vh;">#left__text {</p>
+            <p style="padding-left: 0vh;">.left__text {</p>
             <p style="padding-left: 6vh;">width: 33%;</p>
             <p style="padding-left: 6vh;">text-align: left;</p>
             <p style="padding-left: 6vh;">float: left;</p>
             <p style="padding-left: 6vh;">padding: 0 0;</p>
             <p style="padding-left: 0vh;">}</p>
             <br>
-            <p style="padding-left: 0vh;">#right__text {</p>
+            <p style="padding-left: 0vh;">.right__text {</p>
             <p style="padding-left: 6vh;">width: 33%;</p>
             <p style="padding-left: 6vh;">text-align: right;</p>
             <p style="padding-left: 6vh;">float: right;</p>
             <p style="padding-left: 6vh;">padding: 0 0;</p>
             <p style="padding-left: 0vh;">}</p>
             <br>
-            <p style="padding-left: 0vh;">#center__text {</p>
+            <p style="padding-left: 0vh;">.center__text {</p>
             <p style="padding-left: 6vh;">width: 34%;</p>
             <p style="padding-left: 6vh;">text-align: center;</p>
             <p style="padding-left: 6vh;">float: right;</p>
@@ -252,19 +244,18 @@
     <h4 style="margin-top: 5vh;"> Results: </h4>
 </div>
 <div class="example__foramting">
-    <div id="left__text">
+    <div class="left__text">
         <p>Left</p>
     </div>
-    <div id="right__text">
+    <div class="right__text">
         <p>Right</p>
     </div>
-    <div id="center__text">
+    <div class="center__text">
         <p>Center</p>
     </div>
 </div>
 <div class="formatting__section">
-    <h3> Text can be <span style="color: blue;"> formated </span> in many different ways! </h3>
-    </p>
+    <h3> Text can be <span style="color: rgb(255, 58, 245);"> formatted </span> in many different ways! </h3>
     <div class="inline__div">
         <h1 class="inline__header"> As</h1>
         <h2 class="inline__header"> Many  </h2>
@@ -281,7 +272,7 @@
         <h5 class="inline__header"> &lt;h5&gt; </h5>
         <h6 class="inline__header"> &lt;h6&gt;</h6>
     </div>
-    <p> <br> &lt;p&gt; Or as a <strong><span style="letter-spacing: 10px;"> long paragraph </span></strong>&lt;/p&gt;</p>
+    <p> <br> &lt;p&gt; Or as a <strong><span style="letter-spacing: 0.2vw; color: rgb(255, 58, 245);"> long paragraph </span></strong>&lt;/p&gt;</p>
     <p class="text__example__paragraph">
         Hic est quidam textus exemplaris quem scripsi et interpretatus sum utens translate.
         Nescio quomodo legere vel scribere latine et loco interpretari!
@@ -295,9 +286,9 @@
         potui de singulis indiciis.</p>
         <br>
     
-    <h3>It can even be formatted as a list!</h3>
+    <h3>It can even be formatted as a <span style="color: rgb(255, 58, 245);">list</span>!</h3>
     <div id="list__text">
-        <div id="left__text" style="text-align: left; width: 50%; padding-left: 10vw;">
+        <div class="left__text" style="text-align: left; width: 50%; padding-left: 10vw;">
             <ul>
                 <li>With</li>
                 <li>Each</li>
@@ -308,7 +299,7 @@
                 <li>Text</li>
             </ul>
         </div>
-        <div id="right__text" style="text-align: left; width: 50%; padding-left: 10vw;">
+        <div class="right__text" style="text-align: left; width: 50%; padding-left: 10vw;">
             <ol>
                 <li>With</li>
                 <li>Or</li>
@@ -319,43 +310,243 @@
             </ol>
         </div>
     </div>
-</div>
-
-
-<div class="hero" id="home">
-    <p>
-        Here is an image <br>
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Test_image.jpg" alt="test image"> <br>
-        <a href="https://www.google.com" target="_blank"> hi there</a>
+    <h4 style="margin-top: 5vh;">
+        Why use formatting?
+    </h4>
+    <p class="text__example__paragraph">
+        Text formatting is used to improve the readability of a web page.
+        For example, the use of different sized headers can help readers easily locate different sections of the page and quickly find the information they need.
+        Formatting can also be used stylistically to give a web page a certain aesthetic design for its readers
     </p>
-
 </div>
-<div class="second-test-div">
-    <p> Second text </p>
-    <ul class="no-bullets-list">
-        <li> LIst yes </li>
-        <li> hi ther </li>
-        <li> three </li>
-    </ul>
+<div class="elements__section">
+    <h2 class="elements__header" id="elements__header">All About &lt;Elements&gt;</h2>
+    <h3 class="elements__header">How do tags work?</h3>
+    <p class="elements__paragraph">
+        HTML markup tags define how web browsers will format and display its content.
+        They consist of an opening tag, inner content, and a closing tag.
+        HTML markup tags start and end with the &lt;&gt; brackets and are preferably written in lowercase for readability and compatibility with stricter document types such as XHTML.
+    </p>
+    <h4 class="elements__header">Empty tags</h4>
+    <p class="elements__paragraph">
+        Some tags do not include content and do not need a closing tag. <br>
+        These tags include: <br>
+        &lt;br&gt; which adds a line break in between elements.
+        <br>
+        &lt;hr&gt; which adds a horizontal line across the page.
+        <hr style="color: red;">
+    </p>
+    <h3 class="elements__header">What are attributes?</h3>
+    <p class="elements__paragraph">
+        Attributues are additional parameters HTML elements can be
+        given in order to specify more information about how the element functions.
+        They are specifed in the opening tag of an element and are structured in name/value pairs.
+    </p>
+    <h3 class="elements__header">Here are some examples of attributes:</h3>
+    <div class="horizontal__flexbox">
+        <div class="vertical__flexbox">
+            <h4>The "href" attribute</h4>
+            <div class="sample__code" style="background-color: rgb(227, 227, 227);">
+                <p style="padding-left: 0vh; font-size: 2vw;">
+                    &lt;a href="https://google.com"&gt;
+                    <a href="https://google.com" target="_blank">This is a link to google.com</a>
+                    &lt;/a&gt;
+                    
+                </p>
+            </div>
+        </div>
 
-
-</div>
-<div class="testing__section">
-    <h1>Welcome to the testing section</h1>
-    <h1 class="testing__header"> This is the test header </h1>
-    <div class="test__paragraph__animation">
-        <p class="testing__paragraph"> test words test words test words test words test words test words test words <br>
-                                        test words test words test words test words</p>
+        <div class="vertical__flexbox">
+            <h4>The "style" attribute</h5>
+            <div class="sample__code" style="background-color: rgb(227, 227, 227);">
+                <p style="padding-left: 0vh; font-size: 2vw;">
+                    &lt;p style="color: red;"&gt;
+                    <span style="color: red;">This makes the text red!</span>
+                    &lt;/p&gt;
+                </p>
+            </div>
+        </div>
     </div>
-    <button class="test__button" id="test__button">The Test Button</button>
-    <input id="location__button" type="submit" name="button" value="Where are you?"/>
-    <br>
-    <p class="span__paragraph">This is the span paragraph, you can add on to this paragraph and it will be parsed using js test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words test words
-    </p>
+    <div class="horizontal__flexbox">
+        <div class="vertical__flexbox">
+            <h4>The "title" attribute</h4>
+            <div class="sample__code" style="background-color: rgb(227, 227, 227);">
+                <p style="padding-left: 0vh; font-size: 2vw;" title="This will display as a tooltop!">
+                    &lt;p title="This will display as a tooltop!"&gt; Hover over me to display a tooltip! &lt;/p&gt;
+                </p>
+            </div>
+        </div>
 
+        <div class="vertical__flexbox">
+            <h4>The "target" attribute</h4>
+            <div class="sample__code" style="background-color: rgb(227, 227, 227);">
+                <p style="padding-left: 0vh; font-size: 1.7vw;">
+                    &lt;a href="https://www.target.com/" target="_blank"&gt; <br>
+                    <a href="https://www.target.com/" target="_blank">This will open on a new tab</a>
+                    &lt;/a&gt;
+                
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="script.js"></script>
-
+<div class="tips__section" id="tips">
+    <h2 class="tips__header" style="font-size: 6vw; margin-top: 8vh;">Important Tips!</h2>
+    <h3 class="tips__header">How to explain your code</h3>
+    <p class="tips__paragraph">
+        Comments are a usefull way to explain your code!
+        They can be used to explain what your code does to yourself and other readers.
+        In HTML, comments are marked with the comments tag "&lt;!-- --&gt;".
+        In CSS, comments are marked with "/* */".
+    </p>
+    <h4 class="tips__paragraph">Here is an example:</h4>
+    <div class="horizontal__flexbox">
+        <div class="vertical__flexbox">
+            <div class="sample__code" style="text-align: left; font-size: 2vw;">
+                <p style="padding-left: 2vh; color: green;">&lt;!-- this paragraph contains important information --&gt;</p>
+                <p style="padding-left: 2vh;">&lt;p class="important__paragraph"&gt;</p>
+                <p style="padding-left: 8vh;">Important information!</p>
+                <p style="padding-left: 2vh;">&lt;/p&gt;</p>
+            </div>
+        </div>
+        <div class="vertical__flexbox">
+            <div class="sample__code" style="text-align: left; font-size: 2vw;">
+                <p style="padding-left: 2vh; color: green;">/* this class is for important information */</p>
+                <p style="padding-left: 2vh;">.important__paragraph {</p>
+                <p style="padding-left: 8vh;">font-size: 2rem;</p>
+                <p style="padding-left: 2vh;">}</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="tips__header">Viewing other websites code!</h3>
+    <p class="tips__paragraph">
+        Ever wonder how a webpage was made? <br>
+        By inspecting a webpage, you can access the CSS and HTML behind a site! <br>
+    </p>
+    <div class="horizontal__flexbox">
+        <div class="vertical__flexbox">
+            <h5 class="tips__header">The inspect element button</h5>
+            <img class="tips__image" src="inspect_element.png" alt="Inspecting A Webpage">
+        </div>
+        <div class="vertical__flexbox">
+            <h5 class="tips__header">The inspect page</h5>
+            <img class="tips__image" src="inspect_page.png" alt="Webpage Inspect Screen">
+        </div>
+    </div>
+    <h3 class="tips__header">The text can change font!</h3>
+    <p class="tips__paragraph" style="font-size: 5vh;">
+        <span style="font-family:'Times New Roman', Times, serif;"> This text is in Times New Roman</span> <br>
+        <span style="font-family: 'Courier New', Courier, monospace; font-size: 4vw;"> This text is in Courier New</span> <br>
+        <span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> This text is in IMPACT</span> <br>
+        <span style="font-family: 'Sacramento'; font-size: 6vh;"> This text is in sacramento</span> <br>
+    </p>
+    <p class="tips__paragraph">
+        Fonts can be downloaded and be used to change text using the font-family style!
+        This style specifies a font and the family of fonts it is from.
+        Another way to change font is by using the &lt;font&gt; element although this is <strong>highly</strong> advised against.
+        This is because the font tag is deparacated, meaning it is outdated and has been replaced by better options such as the font family style.
+    </p>
+    <h3 class="tips__header">Styling</h3>
+    <h4 class="tips__header">Styles are useful to change the way a webpage looks!</h4>
+    <p>
+        They can turn blank pages into more visually appealing sites.
+        Styling can be done with the &lt;style&gt; tag in HTML, but a better more common method to use a stylesheet.
+        Stylesheets seperate styles from your HTML document for a more organised experience.
+        To do this, simply create a new file ending with .css and link the stylesheet to your html document.
+    </p>
+    <div class="vertical__flexbox">
+        <h5 class="tips__header">Without Stylesheet</h5>
+        <div class="sample__code" style="text-align: left; font-size: min(2vw, 2vh); width: 50%;">
+            <p style="padding-left: 0vh;">&lt;head&gt;</p>
+            <p style="padding-left: 6vh;">&lt;style&gt;</p>
+            <p style="padding-left: 12vh;">h1 {</p>
+            <p style="padding-left: 18vh;">letter-spacing: 40px;</p>
+            <p style="padding-left: 12vh;">}</p>
+            <br>
+            <p style="padding-left: 12vh;">.red {</p>
+            <p style="padding-left: 18vh;">color: red;</p>
+            <p style="padding-left: 12vh;">}</p>
+            </p>
+            <p style="padding-left: 12vh;">.green {</p>
+            <p style="padding-left: 18vh;">color: green;</p>
+            <p style="padding-left: 12vh;">}</p>
+            <br>
+            <p style="padding-left: 12vh;">.blue {</p>
+            <p style="padding-left: 18vh;">color: blue;</p>
+            <p style="padding-left: 12vh;">}</p>
+            <br>
+            <p style="padding-left: 6vh;">&lt;/style&gt;</p>
+            <p style="padding-left: 0vh;">&lt;/head&gt;</p>
+            <p style="padding-left: 0vh;">&lt;body&gt;</p>
+            <p style="padding-left: 6vh;">&lt;h1 class="header"&gt;The header&lt;/h1&gt;</p>
+            <p style="padding-left: 6vh;">&lt;p class="red"&gt;the red paragraph&lt;/p&gt;</p>
+            <p style="padding-left: 6vh;">&lt;p class="green"&gt;the green paragraph&lt;/p&gt;</p>
+            <p style="padding-left: 6vh;">&lt;p class="blue"&gt;the blue paragraph&lt;/p&gt;</p>
+            <p style="padding-left: 0vh;">&lt;/body&gt;</p>
+        </div>
+        <h4 class="tips__header">With Stylesheet</h4>
+        <div class="horizontal__flexbox">
+            <div class="vertical__flexbox">
+                <h4>HTML</h4>
+                <div class="sample__code" style="text-align: left; font-size: min(2vw, 2vh);">
+                    <p style="padding-left: 2vh;">&lt;body&gt;</p>
+                    <p style="padding-left: 8vh;">&lt;h1 class="header"&gt;The header&lt;/h1&gt;</p>
+                    <p style="padding-left: 8vh;">&lt;p class="red"&gt;the red paragraph&lt;/p&gt;</p>
+                    <p style="padding-left: 8vh;">&lt;p class="green"&gt;the green paragraph&lt;/p&gt;</p>
+                    <p style="padding-left: 8vh;">&lt;p class="blue"&gt;the blue paragraph&lt;/p&gt;</p>
+                    <p style="padding-left: 2vh;">&lt;/body&gt;</p>
+                </div>
+            </div>
+            <div class="vertical__flexbox">
+                <h4>CSS</h4>
+                <div class="sample__code" style="text-align: left; font-size: min(2vw, 2vh);">
+                    <p style="padding-left: 2vh;">h1 {</p>
+                    <p style="padding-left: 8vh;">letter-spacing: 40px;</p>
+                    <p style="padding-left: 2vh;">}</p>
+                    <br>
+                    <p style="padding-left: 2vh;">.red {</p>
+                    <p style="padding-left: 8vh;">color: red;</p>
+                    <p style="padding-left: 2vh;">}</p>
+                    </p>
+                    <p style="padding-left: 2vh;">.green {</p>
+                    <p style="padding-left: 8vh;">color: green;</p>
+                    <p style="padding-left: 2vh;">}</p>
+                    <br>
+                    <p style="padding-left: 2vh;">.blue {</p>
+                    <p style="padding-left: 8vh;">color: blue;</p>
+                    <p style="padding-left: 2vh;">}</p>
+                </div>
+            </div>
+        </div>
+        <h4>Output:</h4>
+        <div class="sample__code" style="text-align: left;">
+            <h1 class="header" style="letter-spacing: 40px;">The header</h1>
+            <p class="red" style="color: red;">the red paragraph</p>
+            <p class="green" style="color: green;">the green paragraph</p>
+            <p class="blue" style="color: blue;">the blue paragraph</p>
+        </div>
+    </div>
+</div>
+<div class="footer__section" id="learn">
+    <h3 class="footer__header">You have reached the end of the page</h3>
+    <h4 class="footer__header">Thank you for reading.</h4>
+    <p class="footer__paragraph">
+        Want to learn more? <br>
+        Here are some places to go next!
+    </p>
+</div>
+<div class="horizontal__flexbox" style="background-color: black; font-size: 1vw;">
+    <div class="vertical__flexbox">
+        <a class="footer__link" href="https://www.w3schools.com/default.asp" target="_blank">Learn more about HTML</a>
+    </div>
+    <div class="vertical__flexbox">
+        <a class="footer__link" href="https://codepen.io/" target="_blank">Code HTML in real time</a>
+    </div>
+    <div class="vertical__flexbox">
+        <a class="footer__link" href="https://www.geeksforgeeks.org/html/" target="_blank">Geeks for Geeks HTML
+            Tutorial</a>
+    </div>
+</div>
 </body>
 
 </html>
