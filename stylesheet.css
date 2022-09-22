@@ -132,11 +132,12 @@ pre {
     -moz-background-clip: text; /* for firefox */
     -moz-text-fill-color: transparent;
     
+    word-wrap: none;
     display: flex;
     align-items: center;
     /* cursor: pointer; redundant */
+    font-size: 3.5vh;
     text-decoration: none; /* semi redundant */
-    font-size: 2rem;
     z-index: 99;
     transition: all 0.5s ease;
 }
@@ -238,7 +239,7 @@ pre {
     background-size: 100%;
     background-clip: text;
 
-    background-image: linear-gradient(to right, rgb(194, 224, 22) 0%, rgba(217, 255, 49, 0.61) 100%);
+    background-image: linear-gradient(to right, rgb(229, 255, 85) 0%, rgb(255, 241, 131) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -248,8 +249,8 @@ pre {
 }
 
 #types__of__tags {
-    color: lightblue;
-    background-color: lightblue;
+    color: rgb(128, 223, 255);
+    background-color: rgb(120, 221, 255);
     background-size: 100%;
     background-clip: text;
 
@@ -291,23 +292,27 @@ pre {
     padding-bottom: 0;
     min-height: 20vh;
 
-    background-color: #13191b;
-    background-image: linear-gradient(to top left, #C0FDFB 0%, #80fffb 100%);
+    background-color: #F7882F;
+    background-image: linear-gradient(to top left, #ffa65c 0%, #F7882F 100%);
 }
 
 .text__description {
     /* makes div height change depending on content */
     /* padding: 100px ; */
-    color: #31393c;
+    color: #ffedd3;
 }
 
 .text__header {
-    font-size: min(15vh, 30vw);
-    color: #31393c;
+    font-size: min(12vh, 30vw);
+    color: #ffedd3;
     position: relative;
     padding: 5.5vh 5vw;
 
     display: inline-block;
+}
+
+h4.text__header {
+    font-size: min(7vh, 30vw);
 }
 
 .text__header span { /* affects span content */
@@ -341,14 +346,12 @@ pre {
 }
 
 .example__foramting {
-    /* makes div height change depending on content */
-
     width: 100%;
 
     background-color: #c7baae;
     font-size: min(110px, 7vw);
     font-weight: 900;
-    padding: 5vh 5vw;
+    padding: 3vh 5vw;
 
     background-image: linear-gradient(to right, rgb(217, 255, 0) 0%, rgb(255, 121, 121) 100%);
     background-size: 100%;
@@ -360,7 +363,7 @@ pre {
     display: flex;
     flex-direction: column;
 
-    font-size: 5vh;
+    font-size: min(7vh, 6vw);
     /* padding: 0 min(400px, 20vw); */
     text-align: center;
     width: 100%;
@@ -372,7 +375,7 @@ pre {
 
 .text__example__paragraph {
     color: white;
-    font-size: min(2vh, 4vw);
+    font-size: min(3vh, 3.5vw);
     padding: 10px 10vw;
 }
 
@@ -403,10 +406,20 @@ pre {
 .elements__section {
     display: flex;
     flex-direction: column;
-    padding: 5vh 5vw;
+    padding: 5vh 10vw;
     font-size: 3vh;
     text-align: center;
     width: 100%;
+    background-color: white;
+    color: #34b5ff;
+}
+
+p.elements__paragraph {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 15vw;
+    font-size: 3vh;
+    text-align: center;
     background-color: white;
     color: #34b5ff;
 }
@@ -439,7 +452,7 @@ h4.elements__header {
 }
 
 .tips__image {
-    width: 90%;
+    width: 70%;
 }
 
 #tips__header {
@@ -448,7 +461,7 @@ h4.elements__header {
 
 .tips__paragraph {
     margin-top: 1vh;
-    font-size: 2.5vw;
+    font-size: min(2.5vw, 3vh);
     padding: 0 10vw;
 }
 

@@ -11,7 +11,9 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#learn" id="navbar-logo">Learn More</a>
+            <p id="navbar-logo">
+                <a href="#learn">Learn More</a>
+            </p>
             <ul class="navbar__menu">
                 <li class="navbar__item"> <a href="#welcome" class="navbar__links" id="welcome-page">Welcome</a></li>
                 <li class="navbar__item"> <a href="#about" class="navbar__links" id="about-page">About</a></li>
@@ -162,7 +164,7 @@
         </div>
         <div>
             <div class="sample__code left__text" style="width: 45%;">
-                <p style="padding-left: 0vh;">&lt;div class="example__foramting"&gt;</p>
+                <p style="padding-left: 0vh;">&lt;div class="example__formatting"&gt;</p>
                 <p style="padding-left: 6vh;">&lt;div class="left__text"&gt;</p>
                 <p style="padding-left: 12vh;">&lt;p&gt;Left&lt;/p&gt;</p>
                 <p style="padding-left: 6vh;">&lt;/div&gt;</p>
@@ -241,7 +243,7 @@
             <p style="padding-left: 0vh;">}</p>
         </div>
     </div>
-    <h4 style="margin-top: 5vh;"> Results: </h4>
+    <h4 class="text__header" style="margin-top: 5vh;"> Results: </h4>
 </div>
 <div class="example__foramting">
     <div class="left__text">
@@ -347,7 +349,7 @@
         <div class="vertical__flexbox">
             <h4>The "href" attribute</h4>
             <div class="sample__code" style="background-color: rgb(227, 227, 227);">
-                <p style="padding-left: 0vh; font-size: 2vw;">
+                <p style="padding-left: 0vh; font-size: 2vw; padding: 0 1vw;">
                     &lt;a href="https://google.com"&gt;
                     <a href="https://google.com" target="_blank">This is a link to google.com</a>
                     &lt;/a&gt;
@@ -359,7 +361,7 @@
         <div class="vertical__flexbox">
             <h4>The "style" attribute</h4>
             <div class="sample__code" style="background-color: rgb(227, 227, 227);">
-                <p style="padding-left: 0vh; font-size: 2vw;">
+                <p style="padding-left: 0vh; font-size: 2vw; padding: 0 1vw;">
                     &lt;p style="color: red;"&gt;
                     <span style="color: red;">This makes the text red!</span>
                     &lt;/p&gt;
@@ -371,7 +373,7 @@
         <div class="vertical__flexbox">
             <h4>The "title" attribute</h4>
             <div class="sample__code" style="background-color: rgb(227, 227, 227);">
-                <p style="padding-left: 0vh; font-size: 2vw;" title="This will display as a tooltop!">
+                <p style="padding-left: 0vh; font-size: 2vw; padding: 0 1vw;" title="This will display as a tooltop!">
                     &lt;p title="This will display as a tooltop!"&gt; Hover over me to display a tooltip! &lt;/p&gt;
                 </p>
             </div>
@@ -380,7 +382,7 @@
         <div class="vertical__flexbox">
             <h4>The "target" attribute</h4>
             <div class="sample__code" style="background-color: rgb(227, 227, 227);">
-                <p style="padding-left: 0vh; font-size: 1.7vw;">
+                <p style="padding-left: 0vh; font-size: 1.7vw; padding: 0 1vw;">
                     &lt;a href="https://www.target.com/" target="_blank"&gt; <br>
                     <a href="https://www.target.com/" target="_blank">This will open on a new tab</a>
                     &lt;/a&gt;
@@ -391,13 +393,13 @@
     </div>
 </div>
 <div class="tips__section" id="tips">
-    <h2 class="tips__header" style="font-size: 6vw; margin-top: 8vh;">Important Tips!</h2>
+    <h2 class="tips__header" id="tips__header" style="margin-top: 8vh;">Important Tips!</h2>
     <h3 class="tips__header">How to explain your code</h3>
     <p class="tips__paragraph">
         Comments are a usefull way to explain your code!
         They can be used to explain what your code does to yourself and other readers.
-        In HTML, comments are marked with the comments tag "&lt;!-- --&gt;".
-        In CSS, comments are marked with "/* */".
+        In HTML, comments are marked with the comments tag <span style="color: green;">&lt;!-- --&gt;</span>.
+        In CSS, comments are marked with <span style="color: green;">/* */</span>.
     </p>
     <h4 class="tips__paragraph">Here is an example:</h4>
     <div class="horizontal__flexbox">
@@ -444,23 +446,23 @@
         Fonts can be downloaded and be used to change text using the font-family style!
         This style specifies a font and the family of fonts it is from.
         Another way to change font is by using the &lt;font&gt; element although this is <strong>highly</strong> advised against.
-        This is because the font tag is deparacated, meaning it is outdated and has been replaced by better options such as the font family style.
+        This is because the font tag is deprecated, meaning it is outdated and has been replaced by better options such as the font family style.
     </p>
     <h3 class="tips__header">Styling</h3>
     <h4 class="tips__header">Styles are useful to change the way a webpage looks!</h4>
-    <p>
+    <p class="tips__paragraph">
         They can turn blank pages into more visually appealing sites.
         Styling can be done with the &lt;style&gt; tag in HTML, but a better more common method to use a stylesheet.
         Stylesheets seperate styles from your HTML document for a more organised experience.
         To do this, simply create a new file ending with .css and link the stylesheet to your html document.
     </p>
     <div class="vertical__flexbox">
-        <h5 class="tips__header">Without Stylesheet</h5>
+        <h4 class="tips__header" style="margin-top: 6vh;">Without Stylesheet</h4>
         <div class="sample__code" style="text-align: left; font-size: min(2vw, 2vh); width: 50%;">
             <p style="padding-left: 0vh;">&lt;head&gt;</p>
             <p style="padding-left: 6vh;">&lt;style&gt;</p>
             <p style="padding-left: 12vh;">h1 {</p>
-            <p style="padding-left: 18vh;">letter-spacing: 40px;</p>
+            <p style="padding-left: 18vh;">font-width: 900;</p>
             <p style="padding-left: 12vh;">}</p>
             <br>
             <p style="padding-left: 12vh;">.red {</p>
@@ -484,7 +486,7 @@
             <p style="padding-left: 6vh;">&lt;p class="blue"&gt;the blue paragraph&lt;/p&gt;</p>
             <p style="padding-left: 0vh;">&lt;/body&gt;</p>
         </div>
-        <h4 class="tips__header">With Stylesheet</h4>
+        <h4 class="tips__header" style="margin-top: 6vh;">With Stylesheet</h4>
         <div class="horizontal__flexbox">
             <div class="vertical__flexbox">
                 <h4>HTML</h4>
@@ -501,7 +503,7 @@
                 <h4>CSS</h4>
                 <div class="sample__code" style="text-align: left; font-size: min(2vw, 2vh);">
                     <p style="padding-left: 2vh;">h1 {</p>
-                    <p style="padding-left: 8vh;">letter-spacing: 40px;</p>
+                    <p style="padding-left: 8vh;">font-weight: 900;</p>
                     <p style="padding-left: 2vh;">}</p>
                     <br>
                     <p style="padding-left: 2vh;">.red {</p>
@@ -520,7 +522,7 @@
         </div>
         <h4>Output:</h4>
         <div class="sample__code" style="text-align: left;">
-            <h1 class="header" style="letter-spacing: 40px;">The header</h1>
+            <h1 class="header" style="font-weight: 900;">The header</h1>
             <p class="red" style="color: red;">the red paragraph</p>
             <p class="green" style="color: green;">the green paragraph</p>
             <p class="blue" style="color: blue;">the blue paragraph</p>
