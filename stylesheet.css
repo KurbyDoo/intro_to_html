@@ -132,7 +132,6 @@ pre {
     -moz-background-clip: text; /* for firefox */
     -moz-text-fill-color: transparent;
     
-    word-wrap: none;
     display: flex;
     align-items: center;
     /* cursor: pointer; redundant */
