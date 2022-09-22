@@ -144,7 +144,7 @@ pre {
 #navbar-logo:hover {
     transition: all 0.5s ease;
     background-image: linear-gradient(to top, #ffd723 0%, white 100%);
-    transform: scale(110%);
+    scale: 110%;
 }
 
 .navbar__menu {
